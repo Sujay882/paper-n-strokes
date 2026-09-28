@@ -101,7 +101,7 @@ Thank you!
                 </h2>
 
                 <p>
-                  Artist & illustrator
+                  I am an Artist
                 </p>
               </div>
 
