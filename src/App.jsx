@@ -78,7 +78,8 @@ Thank you!
           <div className="home-card">
             <header className="home-nav">
               <a href="#home" className="brand">
-                Paper-n-Strokes
+              
+                <span>Paper-n-Strokes</span>
               </a>
 
               <nav>
@@ -109,12 +110,12 @@ Thank you!
                 <div className="portrait-ring"></div>
 
                 <div className="portrait-photo">
-                <img
-                  src="/sukruta-profile.png"
-                  alt="Sukruta Kulkarni"
-                  draggable="false"
-                  onContextMenu={(e) => e.preventDefault()}
-                />
+                  <img
+                    src="/sukruta-profile.png"
+                    alt="Sukruta Kulkarni"
+                    draggable="false"
+                    onContextMenu={(e) => e.preventDefault()}
+                  />
                 </div>
               </div>
 
@@ -124,7 +125,7 @@ Thank you!
                 </span>
 
                 <h2>
-                  Art feels 
+                  Art feels
                   <span>personal.</span>
                 </h2>
 
@@ -135,15 +136,9 @@ Thank you!
             </div>
 
             <div className="home-bottom">
-             
+              <a href="#work"></a>
 
-              <a href="#work">
-              
-              </a>
-
-              <span className="home-year">
-             
-              </span>
+              <span className="home-year"></span>
             </div>
           </div>
         </section>
@@ -151,12 +146,9 @@ Thank you!
         <section className="works" id="work">
           <div className="works-heading">
             <div>
-              <span className="section-number">
-               
-              </span>
+              <span className="section-number"></span>
 
-              <p className="small-label">
-              </p>
+              <p className="small-label"></p>
 
               <h2>
                 Selected <em>Works</em>
@@ -169,343 +161,344 @@ Thank you!
             </p>
           </div>
 
-<div className="gallery">
-  <article
-    className="artwork artwork-tall"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-1.jpeg",
-        title: "Chhatrapati Shivaji Maharaj",
-        type: "Pencil Sketch"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-1.jpeg"
-        alt="Chhatrapati Shivaji Maharaj pencil sketch"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+          <div className="gallery">
+            <article
+              className="artwork artwork-tall"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-1.jpeg",
+                  title: "Chhatrapati Shivaji Maharaj",
+                  type: "Pencil Sketch"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-1.jpeg"
+                  alt="Chhatrapati Shivaji Maharaj pencil sketch"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Chhatrapati Shivaji Maharaj</strong>
-      <span>Pencil Sketch</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Chhatrapati Shivaji Maharaj</strong>
+                <span>Pencil Sketch</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-2.jpeg",
-        title: "A Mother's Love ❤️",
-        type: "Colour Pencil Sketch"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-2.jpeg"
-        alt="A Mother's Love colour pencil sketch"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-2.jpeg",
+                  title: "A Mother's Love ❤️",
+                  type: "Colour Pencil Sketch"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-2.jpeg"
+                  alt="A Mother's Love colour pencil sketch"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>A Mother's Love ❤️</strong>
-      <span>Colour Pencil Sketch</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>A Mother's Love ❤️</strong>
+                <span>Colour Pencil Sketch</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-3.jpeg",
-        title: "Shri Ram Mandir Idol",
-        type: "Charcoal Art"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-3.jpeg"
-        alt="Shri Ram Mandir Idol charcoal art"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-3.jpeg",
+                  title: "Shri Ram Mandir Idol",
+                  type: "Charcoal Art"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-3.jpeg"
+                  alt="Shri Ram Mandir Idol charcoal art"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Shri Ram Mandir Idol</strong>
-      <span>Charcoal Art</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Shri Ram Mandir Idol</strong>
+                <span>Charcoal Art</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-tall"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-4.jpeg",
-        title: "Allu Arjun as Pushpa Raj",
-        type: "Colour Pencil Art"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-4.jpeg"
-        alt="Allu Arjun as Pushpa Raj colour pencil art"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-tall"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-4.jpeg",
+                  title: "Allu Arjun as Pushpa Raj",
+                  type: "Colour Pencil Art"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-4.jpeg"
+                  alt="Allu Arjun as Pushpa Raj colour pencil art"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Allu Arjun as Pushpa Raj</strong>
-      <span>Colour Pencil Art</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Allu Arjun as Pushpa Raj</strong>
+                <span>Colour Pencil Art</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-wide"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-5.jpeg",
-        title: "Lord Krishna with Arjun",
-        type: "Poster Colour Painting"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-5.jpeg"
-        alt="Lord Krishna with Arjun poster colour painting"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-wide"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-5.jpeg",
+                  title: "Lord Krishna with Arjun",
+                  type: "Poster Colour Painting"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-5.jpeg"
+                  alt="Lord Krishna with Arjun poster colour painting"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Lord Krishna with Arjun</strong>
-      <span>Poster Colour Painting</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Lord Krishna with Arjun</strong>
+                <span>Poster Colour Painting</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-6.jpeg",
-        title: "Maharashtraian Kaka",
-        type: "Colour Pencil Sketch"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-6.jpeg"
-        alt="Maharashtraian Kaka colour pencil sketch"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-6.jpeg",
+                  title: "Maharashtraian Kaka",
+                  type: "Colour Pencil Sketch"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-6.jpeg"
+                  alt="Maharashtraian Kaka colour pencil sketch"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Maharashtraian Kaka</strong>
-      <span>Colour Pencil Sketch</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Maharashtraian Kaka</strong>
+                <span>Colour Pencil Sketch</span>
+              </div>
+            </article>
 
-    <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artworkA.jpeg",
-        title: "A Deer",
-        type: "Canvas Painting"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artworkA.jpeg"
-        alt="A Deer canvas painting"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artworkA.jpeg",
+                  title: "A Deer",
+                  type: "Canvas Painting"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artworkA.jpeg"
+                  alt="A Deer canvas painting"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>A Deer</strong>
-      <span>Canvas Painting</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>A Deer</strong>
+                <span>Canvas Painting</span>
+              </div>
+            </article>
 
-    <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artworkB.jpeg",
-        title: "Raghavendra Swami",
-        type: "Pencil Sketch"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artworkB.jpeg"
-        alt="Raghavendra Swami pencil sketch"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artworkB.jpeg",
+                  title: "Raghvendra Swami",
+                  type: "Pencil Sketch"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artworkB.jpeg"
+                  alt="Raghvendra Swami pencil sketch"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Raghvendra Swami</strong>
-      <span>Pencil Sketch</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Raghvendra Swami</strong>
+                <span>Pencil Sketch</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-7.jpeg",
-        title: "Swami Samarth",
-        type: "Colour Pencil Sketch"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-7.jpeg"
-        alt="Swami Samarth colour pencil sketch"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-7.jpeg",
+                  title: "Swami Samarth",
+                  type: "Colour Pencil Sketch"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-7.jpeg"
+                  alt="Swami Samarth colour pencil sketch"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Swami Samarth</strong>
-      <span>Colour Pencil Sketch</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Swami Samarth</strong>
+                <span>Colour Pencil Sketch</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-tall"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-8.jpeg",
-        title: "Saurabh Jain as Krishna",
-        type: "Charcoal Art"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-8.jpeg"
-        alt="Saurabh Jain as Krishna charcoal art"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-tall"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-8.jpeg",
+                  title: "Saurabh Jain as Krishna",
+                  type: "Charcoal Art"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-8.jpeg"
+                  alt="Saurabh Jain as Krishna charcoal art"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Saurabh Jain as Krishna</strong>
-      <span>Charcoal Art</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Saurabh Jain as Krishna</strong>
+                <span>Charcoal Art</span>
+              </div>
+            </article>
 
-    <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artworkC.jpeg",
-        title: "Mammooty from Bramayugam",
-        type: "Charcoal Art"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artworkC.jpeg"
-        alt="Mammooty from Bramayugam charcoal art"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artworkC.jpeg",
+                  title: "Mammooty from Bramayugam",
+                  type: "Charcoal Art"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artworkC.jpeg"
+                  alt="Mammooty from Bramayugam charcoal art"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Mammooty from Bramayugam</strong>
-      <span>Charcoal Art</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Mammooty from Bramayugam</strong>
+                <span>Charcoal Art</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-wide"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-9.jpeg",
-        title: "Shri Krishna's Eyes ✨",
-        type: "Artwork"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-9.jpeg"
-        alt="Shri Krishna's Eyes"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-wide"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-9.jpeg",
+                  title: "Shri Krishna's Eyes ✨",
+                  type: "Artwork"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-9.jpeg"
+                  alt="Shri Krishna's Eyes"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Shri Krishna's Eyes ✨</strong>
-      <span>Artwork</span>
-    </div>
-  </article>
+              <div className="artwork-title">
+                <strong>Shri Krishna's Eyes ✨</strong>
+                <span>Artwork</span>
+              </div>
+            </article>
 
-  <article
-    className="artwork artwork-normal"
-    onClick={() =>
-      setSelectedArtwork({
-        image: "/artworks/artwork-10.jpeg",
-        title: "Shri Ram",
-        type: "Colour Pencil Art"
-      })
-    }
-  >
-    <div className="artwork-image">
-      <img
-        src="/artworks/artwork-10.jpeg"
-        alt="Shri Ram colour pencil art"
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
-    </div>
+            <article
+              className="artwork artwork-normal"
+              onClick={() =>
+                setSelectedArtwork({
+                  image: "/artworks/artwork-10.jpeg",
+                  title: "Shri Ram",
+                  type: "Colour Pencil Art"
+                })
+              }
+            >
+              <div className="artwork-image">
+                <img
+                  src="/artworks/artwork-10.jpeg"
+                  alt="Shri Ram colour pencil art"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
 
-    <div className="artwork-title">
-      <strong>Shri Ram</strong>
-      <span>Colour Pencil Art</span>
-    </div>
-  </article>
-</div>
-         
+              <div className="artwork-title">
+                <strong>Shri Ram</strong>
+                <span>Colour Pencil Art</span>
+              </div>
+            </article>
+          </div>
+
+          <div className="gallery-footer">
+            <span>More artwork coming soon</span>
+            <span className="gold-star">✦</span>
+          </div>
         </section>
 
         <section className="about" id="about">
-          <div className="about-number">
-          
-          </div>
+          <div className="about-number"></div>
 
           <div className="about-heading">
-            <p className="small-label">
-            </p>
+            <p className="small-label"></p>
 
             <h2>
               Behind the<em> strokes.</em>
@@ -711,21 +704,11 @@ Thank you!
                     id="subjects"
                     name="subjects"
                   >
-                    <option value="">
-                      Select
-                    </option>
-                    <option value="1">
-                      1
-                    </option>
-                    <option value="2">
-                      2
-                    </option>
-                    <option value="3">
-                      3
-                    </option>
-                    <option value="4+">
-                      4+
-                    </option>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
                   </select>
                 </div>
 
@@ -738,21 +721,11 @@ Thank you!
                     id="size"
                     name="size"
                   >
-                    <option value="">
-                      Select
-                    </option>
-                    <option value="A5">
-                      A5
-                    </option>
-                    <option value="A4">
-                      A4
-                    </option>
-                    <option value="A3">
-                      A3
-                    </option>
-                    <option value="Custom">
-                      Custom
-                    </option>
+                    <option value="">Select</option>
+                    <option value="A5">A5</option>
+                    <option value="A4">A4</option>
+                    <option value="A3">A3</option>
+                    <option value="Custom">Custom</option>
                   </select>
                 </div>
               </div>
@@ -890,37 +863,38 @@ Thank you!
             © 2026 Paper-n-Strokes - Sukruta Kulkarni
           </div>
         </footer>
-      {selectedArtwork && (
-  <div
-    className="artwork-lightbox"
-    onClick={() => setSelectedArtwork(null)}
-  >
-    <button
-      className="lightbox-close"
-      onClick={() => setSelectedArtwork(null)}
-      aria-label="Close artwork"
-    >
-      ×
-    </button>
 
-    <div
-      className="lightbox-content"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <img
-        src={selectedArtwork.image}
-        alt={selectedArtwork.title}
-        draggable="false"
-        onContextMenu={(e) => e.preventDefault()}
-      />
+        {selectedArtwork && (
+          <div
+            className="artwork-lightbox"
+            onClick={() => setSelectedArtwork(null)}
+          >
+            <button
+              className="lightbox-close"
+              onClick={() => setSelectedArtwork(null)}
+              aria-label="Close artwork"
+            >
+              ×
+            </button>
 
-      <div className="lightbox-info">
-        <strong>{selectedArtwork.title}</strong>
-        <span>{selectedArtwork.type}</span>
-      </div>
-    </div>
-  </div>
-)}
+            <div
+              className="lightbox-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={selectedArtwork.image}
+                alt={selectedArtwork.title}
+                draggable="false"
+                onContextMenu={(e) => e.preventDefault()}
+              />
+
+              <div className="lightbox-info">
+                <strong>{selectedArtwork.title}</strong>
+                <span>{selectedArtwork.type}</span>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
 
       <button

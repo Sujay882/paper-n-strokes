@@ -115,6 +115,18 @@ textarea {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.brand-logo {
+  width: 30px;
+  height: 30px;
+  display: block;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .home-nav nav {
@@ -397,103 +409,27 @@ textarea {
   object-position: center;
   user-select: none;
   -webkit-user-drag: none;
+  transition: transform 0.4s ease;
 }
 
 .artwork-title {
   position: relative;
-  left: auto;
-  right: auto;
-  bottom: auto;
+  width: 100%;
   margin-top: 18px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   background: transparent;
 }
 
 .artwork-title strong {
   display: block;
   color: var(--blue);
-  font-size: 1.05rem;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.25;
-}
-
-.artwork-title span {
-  display: block;
-  margin-top: 6px;
-  color: var(--gold);
-  font-size: 0.9rem;
   line-height: 1.3;
-}
-
-.artwork:hover .artwork-image img {
-  transform: scale(1.02);
-}
-
-.artwork-image img {
-  transition: transform 0.4s ease;
-}
-
-@media (max-width: 1000px) {
-  .gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 70px 20px;
-  }
-
-  .artwork-wide {
-    grid-column: span 2;
-  }
-
-  .artwork-image,
-  .artwork-normal .artwork-image {
-    height: 500px;
-  }
-
-  .artwork-tall .artwork-image {
-    height: 560px;
-  }
-
-  .artwork-wide .artwork-image {
-    height: 480px;
-  }
-}
-
-@media (max-width: 700px) {
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 75px;
-  }
-
-  .artwork,
-  .artwork-wide {
-    grid-column: auto;
-    width: 100%;
-    margin-top: 0 !important;
-  }
-
-  .artwork-image,
-  .artwork-normal .artwork-image,
-  .artwork-tall .artwork-image,
-  .artwork-wide .artwork-image {
-    width: 100%;
-    height: 430px;
-  }
-
-  .artwork:nth-child(even) {
-    width: 100%;
-    justify-self: auto;
-  }
-
-  .artwork-title {
-    margin-top: 16px;
-  }
-
-  .artwork-title strong {
-    font-size: 1rem;
-  }
-
-  .artwork-title span {
-    font-size: 0.85rem;
-  }
 }
 
 .artwork-title span {
@@ -504,6 +440,10 @@ textarea {
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: 0.2px;
+}
+
+.artwork:hover .artwork-image img {
+  transform: scale(1.02);
 }
 
 .gallery-footer {
@@ -1051,6 +991,16 @@ textarea {
     padding: 0 7%;
   }
 
+  .brand {
+    font-size: 1.05rem;
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: 25px;
+    height: 25px;
+  }
+
   .home-nav nav {
     display: none;
   }
@@ -1066,6 +1016,7 @@ textarea {
   .home-left {
     order: 2;
     padding: 0;
+    margin-bottom: 70px;
   }
 
   .portrait-container {
@@ -1105,19 +1056,38 @@ textarea {
   .home-right {
     order: 3;
     padding: 0;
+    margin-top: 0;
+  }
+
+  .home-label {
+    margin-bottom: 16px;
   }
 
   .home-side h2 {
     font-size: 3.5rem;
     letter-spacing: -2.5px;
+    line-height: 0.92;
+  }
+
+  .home-left h2 span {
+    margin-top: 8px;
+  }
+
+  .home-left p {
+    margin-top: 28px;
   }
 
   .home-right h2 {
     font-size: 3rem;
+    line-height: 0.95;
   }
 
-  .home-side p {
-    margin-top: 15px;
+  .home-right h2 span {
+    margin-top: 8px;
+  }
+
+  .home-right p {
+    margin-top: 24px;
   }
 
   .home-bottom {
@@ -1155,7 +1125,7 @@ textarea {
 
   .gallery {
     grid-template-columns: 1fr;
-    gap: 90px;
+    gap: 75px;
   }
 
   .artwork,
@@ -1163,21 +1133,43 @@ textarea {
   .artwork-normal,
   .artwork-wide {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: auto;
     margin: 0 !important;
     grid-column: auto;
   }
 
+  .artwork-image,
+  .artwork-normal .artwork-image,
+  .artwork-tall .artwork-image,
+  .artwork-wide .artwork-image {
+    width: 100%;
+    height: 430px;
+  }
+
   .artwork-title {
-    top: calc(100% + 20px);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 0;
+    visibility: visible;
+    opacity: 1;
   }
 
   .artwork-title strong {
+    display: block;
     font-size: 17px;
+    line-height: 1.3;
+    color: var(--blue);
   }
 
   .artwork-title span {
+    display: block;
     font-size: 14px;
+    line-height: 1.3;
+    color: var(--gold);
   }
 
   .gallery-footer {
@@ -1188,6 +1180,19 @@ textarea {
     grid-template-columns: 1fr;
     padding: 90px 7vw;
     min-height: auto;
+  }
+
+  .about::after {
+    right: 2%;
+    top: 22px;
+    font-size: 2.5rem;
+    opacity: 0.65;
+  }
+
+  .about-heading {
+    position: relative;
+    z-index: 2;
+    padding-right: 20px;
   }
 
   .about-heading h2 {
