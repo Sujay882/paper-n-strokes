@@ -120,19 +120,20 @@ Thank you!
               </div>
 
               <div className="home-side home-right">
-                <div className="mobile-divider">
-                  <span>★</span>
-                </div>
-
-                <span className="home-label">WELCOME TO,</span>
+                <span className="home-label">
+                  Welcome to,
+                </span>
 
                 <h2>
                   My Art
                   <span>corner.</span>
                 </h2>
 
-                <p>PORTRAITS · LANDSCAPES · SKETCHES</p>
+                <p>
+                  Portraits · Landscapes · Sketches
+                </p>
               </div>
+            </div>
 
             <div className="home-bottom">
               <a href="#work"></a>
