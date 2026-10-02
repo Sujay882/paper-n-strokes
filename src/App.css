@@ -180,6 +180,7 @@ textarea {
 
 .home-right {
   padding-right: 5%;
+  padding-left: 70px;
 }
 
 .home-label {
@@ -1286,5 +1287,28 @@ textarea {
 
   .lightbox-info strong {
     font-size: 1.15rem;
+  }
+}
+@media (max-width: 700px) {
+  .home {
+    position: relative;
+    padding-bottom: 55px;
+  }
+
+  .home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45px;
+    background:
+      radial-gradient(
+        circle at 0% 100%,
+        transparent 0 44px,
+        rgba(17, 17, 17, 0.08) 45px 46px,
+        transparent 47px
+      );
+    pointer-events: none;
   }
 }
