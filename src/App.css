@@ -1289,26 +1289,47 @@ textarea {
     font-size: 1.15rem;
   }
 }
+
 @media (max-width: 700px) {
   .home {
     position: relative;
-    padding-bottom: 55px;
+    margin-bottom: 55px;
   }
 
   .home::after {
-    content: "";
+    content: "·     ★     ·";
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 45px;
+    left: 7%;
+    right: 7%;
+    bottom: -45px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 11px;
+    letter-spacing: 3px;
+    line-height: 18px;
     background:
-      radial-gradient(
-        circle at 0% 100%,
-        transparent 0 44px,
-        rgba(17, 17, 17, 0.08) 45px 46px,
-        transparent 47px
-      );
-    pointer-events: none;
+      linear-gradient(
+        to right,
+        rgba(17, 17, 17, 0.35),
+        rgba(17, 17, 17, 0.35)
+      ) center / 100% 1px no-repeat;
+    z-index: 10;
+  }
+
+  .home::before {
+    content: "★";
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    transform: translateX(-50%);
+    color: var(--blue);
+    background: var(--ivory);
+    padding: 0 8px;
+    font-size: 17px;
+    line-height: 18px;
+    z-index: 11;
   }
 }
