@@ -121,7 +121,7 @@ Thank you!
 
               <div className="home-side home-right">
                 <span className="home-label">
-                  Paper-n-Strokes
+                  Welcome to,
                 </span>
 
                 <h2>
