@@ -125,8 +125,8 @@ Thank you!
                 </span>
 
                 <h2>
-                  Art feels
-                  <span>personal.</span>
+                  My Art
+                  <span>corner.</span>
                 </h2>
 
                 <p>
