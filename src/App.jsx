@@ -120,6 +120,11 @@ Thank you!
               </div>
 
               <div className="home-side home-right">
+              <div className="mobile-divider">
+                <span>──────────────  ★  ──────────────</span>
+              </div>
+
+              <div className="home-side home-right">
                 <span className="home-label">
                   Welcome to,
                 </span>
