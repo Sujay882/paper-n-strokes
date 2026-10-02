@@ -1293,43 +1293,47 @@ textarea {
 @media (max-width: 700px) {
   .home {
     position: relative;
-    margin-bottom: 55px;
   }
 
   .home::after {
-    content: "·     ★     ·";
+    content: "";
     position: absolute;
-    left: 7%;
-    right: 7%;
-    bottom: -45px;
+    left: 12%;
+    right: 12%;
+    top: 49%;
     height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--blue);
-    font-size: 11px;
-    letter-spacing: 3px;
-    line-height: 18px;
     background:
       linear-gradient(
         to right,
-        rgba(17, 17, 17, 0.35),
-        rgba(17, 17, 17, 0.35)
-      ) center / 100% 1px no-repeat;
-    z-index: 10;
+        transparent 0%,
+        var(--gold) 0%,
+        var(--gold) 44%,
+        transparent 44%,
+        transparent 56%,
+        var(--gold) 56%,
+        var(--gold) 100%
+      );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
   }
 
   .home::before {
     content: "★";
     position: absolute;
     left: 50%;
-    bottom: -45px;
-    transform: translateX(-50%);
-    color: var(--blue);
-    background: var(--ivory);
-    padding: 0 8px;
+    top: calc(49% - 1px);
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    background: var(--blue);
     font-size: 17px;
-    line-height: 18px;
-    z-index: 11;
+    line-height: 1;
+    z-index: 21;
   }
 }
